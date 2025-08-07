@@ -15,7 +15,7 @@ int main() {
 	add_level(levels, &levels_count, 3, 3); // eventually read from file, hardcode one level for now
 
 	Player player;
-	init_player(player, levels[0].tiles, 3, 3);
+	init_player(&player, levels[0].tiles, 3, 3);
 
 	while (!WindowShouldClose()) {
 		BeginDrawing();

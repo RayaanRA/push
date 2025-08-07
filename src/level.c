@@ -2,7 +2,7 @@
 
 Tile tempLevel[][3] = {
 	{ {WALL}, {WALL}, {WALL} },
-	{ {PLAYER}, {NONE}, {NONE} },
+	{ {WALL}, {NONE}, {PLAYER} },
 	{ {GOAL}, {BOX}, {NONE} }
 };
 

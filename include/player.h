@@ -10,6 +10,6 @@ typedef struct {
 	int radius;
 } Player;
 
-void init_player(Player player, Tile tiles[][3], int rows, int cols);
+void init_player(Player* player, Tile tiles[][3], int rows, int cols);
 
 #endif

@@ -1,20 +1,20 @@
 #include "draw.h"
 
 void draw_grid_lines(Tile tiles[][3], Player player, int rows, int cols) {
-	int pos_x = 130;
-	int pos_y = 130;
+	int offset_x = 120;
+	int offset_y = 120;
 	int grid_width = 75;
 
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
-			DrawRectangleLines(pos_x + grid_width, pos_y, grid_width, grid_width, WHITE);
+			DrawRectangleLines((offset_x), (offset_y), grid_width, grid_width, WHITE);
 
-			if (i == player.pos_x && j == player.pos_y) {
-				// Scale grid coordinates to screen coordinates
+			if (j == player.pos_x && i == player.pos_y) {
+				DrawCircle(offset_x + (grid_width / 2), offset_y + (grid_width / 2), 10.0f, GREEN); // adjust to center circle
 			}
-			pos_x += grid_width;
+			offset_x = 120 + grid_width * (j + 1);
 		}
-		pos_y += grid_width;
-		pos_x = 130;
+		offset_y = 120 + grid_width * (i + 1);
+		offset_x = 120;
 	}
 }
