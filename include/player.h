@@ -11,5 +11,6 @@ typedef struct {
 } Player;
 
 void init_player(Player* player, Tile tiles[][3], int rows, int cols);
+void handle_input(Player* player, Tile tiles[][3]);
 
 #endif

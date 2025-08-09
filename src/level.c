@@ -1,9 +1,9 @@
 #include "level.h"
 
 Tile tempLevel[][3] = {
-	{ {WALL}, {WALL}, {WALL} },
-	{ {WALL}, {NONE}, {PLAYER} },
-	{ {GOAL}, {BOX}, {NONE} }
+	{ {WALL}, {NONE}, {NONE} },
+	{ {NONE}, {NONE}, {PLAYER} },
+	{ {NONE}, {NONE}, {NONE} }
 };
 
 void add_level(Level* levels, int* level_count, int rows, int cols) {

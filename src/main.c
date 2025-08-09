@@ -20,7 +20,8 @@ int main() {
 	while (!WindowShouldClose()) {
 		BeginDrawing();
 		ClearBackground(BLACK);
-		draw_grid_lines(levels[0].tiles, player, 3, 3);
+		draw_grid(levels[0].tiles, player, 3, 3);
+		handle_input(&player, levels[0].tiles);
 		EndDrawing();
 	}
 

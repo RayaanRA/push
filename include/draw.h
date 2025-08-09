@@ -6,6 +6,6 @@
 #include "raylib.h"
 #include <stdio.h>
 
-void draw_grid_lines(Tile tiles[][3], Player player, int rows, int cols);
+void draw_grid(Tile tiles[][3], Player player, int rows, int cols);
 
 #endif
